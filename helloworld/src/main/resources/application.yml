@@ -1,3 +1,10 @@
 spring:
   application:
     name: hello-world
+
+  rabbitmq:
+    host: rattlesnake.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: ${RABBITMQ_USERNAME}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}

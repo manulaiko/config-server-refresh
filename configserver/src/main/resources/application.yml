@@ -5,5 +5,12 @@ spring:
         git:
           uri: https://github.com/manulaiko/config-server-refresh
           search-paths: configproperties
+  rabbitmq:
+    host: rattlesnake.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: ${RABBITMQ_USERNAME}
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+
 server:
   port: 8888
