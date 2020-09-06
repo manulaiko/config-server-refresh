@@ -1,0 +1,2 @@
+app:
+  format: Henlo %s from config server
